@@ -19,7 +19,7 @@
 
         <fieldset class="grupo">
             <div class="campo">
-                <label for:="nome"><strong>Nome</strong></label>
+                <label for="nome"><strong>Nome</strong></label>
                 <input type="text" name="nome" id="nome" required>
             </div>
 
@@ -29,11 +29,77 @@
             </div>
         </fieldset>
 
-        <div class="campo">
-            <label for="email"><strong>Email</strong></label>
-            <input type="email" name="email" id="email" required>
-        </div>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nascimento"><strong>Data de Nascimento</strong></label>
+                <input type="date" name="nascimento" id="nascimento" maxlength="8" required>
+            </div>
 
+            <div class="campo">
+                <label for="genero"><strong>Gênero</strong></label>
+                <select id="genero" name="genero" required>
+                    <option value="1" selected disabled>Selecione</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                    <option value="transgênero">Transgênero</option>
+                    <option value="não binário">Não binário</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="email"><strong>E-mail</strong></label>
+                <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
+            </div>
+
+            <div class="campo">
+            <label for="telefone"><strong>Celular</strong></label>
+            <input type="text" name="celular" minlength="9" maxlenght="11" placeholder="00 00000-0000" required>
+            </div>
+        </fieldset>
+
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="cep"><strong>CEP</strong></label>
+                <input type="text" id="cep" maxlength="8" minlength="8" placeholder="00000-000" required>
+            </div>
+            
+            <div class="campo">
+                <label for="logradouro"><strong>Logradouro</strong></label>
+                <input type="text" id="logradouro" name="logradouro" required>
+            </div>
+        </fieldset>
+
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="numero"><strong>Número</strong></label>
+                <input type="text" id="numero" name="numero" required>
+            </div>
+
+            <div class="campo">
+                <label for="complemento"><strong>Complemento</strong></label>
+                <input type="text" id="complemento" name="complemento" required>
+            </div>
+        </fieldset>
+
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="bairro"><strong>Bairro</strong></label>
+                <input type="text" id="bairro" name="bairro" required>
+            </div>
+
+            <div class="campo">
+                <label for="cidade"><strong>Cidade</strong></label>
+                <input type="text" id="cidade" name="cidade" required>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <label for="estado"><strong>Estado</strong></label>
+            <input type="text" id="estado" name="Estado" required>
+        </div>
+    
         <div class="campo">
             <label><strong>De qual lado da aplicação você desenvolve?</strong></label> 
             <label>
@@ -47,15 +113,15 @@
             </label>
             </div>
 
-            <div class="campo">
-                <label for="senoridade"><strong>Senioridade</strong></label>
-                <select id="senioridade" required>
-                    <option selected disabled value="">Selecione</option>
-                    <option>Junior</option>
-                    <option>Pleno</option>
-                    <option>Senior</option>
-                </select>
-            </div>
+        <div class="campo">
+            <label for="senoridade"><strong>Senioridade</strong></label>
+            <select id="senioridade" required>
+                <option selected disabled value="">Selecione</option>
+                <option>Junior</option>
+                <option>Pleno</option>
+                <option>Senior</option>
+            </select>
+        </div>
 
             <fieldset class="grupo">
                 <div id="check">
@@ -71,7 +137,7 @@
                     <input type="checkbox" id="tecnologia5" name="tecnologia5" value="C#">
                     <label for="tecnologia5">C#</label>
                     <input type="checkbox" id="tecnologia6" name="tecnologia6" value="Python">
-                    <label for="tecnologia6">Phyton</label>
+                    <label for="tecnologia6">Python</label>
                     <input type="checkbox" id="tecnologia7" name="tecnologia7" value="Java">
                     <label for="tecnologia7">Java</label>
                 </div>
@@ -87,5 +153,7 @@
 
     </form>
     
+    <script src="js/consulta-endereco.js"></script>
+
 </body>
 </html>

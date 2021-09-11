@@ -59,20 +59,25 @@ fieldset.grupo .campo{
     margin-right:1em;
 }
 
-.campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea{
+.campo input[type="text"], .campo input[type="email"], .campo input[type="date"], .campo select, .campo textarea{
     padding: 0.2em;
     border: 1px solid #4682B4;
     box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
     display: block;
+    height: 20px;
 }
 
-.campo select option{
-    padding-right: 1em;
+.campo select {
+    height: 29px;
+}
+
+.campo textarea{
+    height: 65px;
 }
 
 .campo input:focus, .campo select:focus, .campo textarea:focus {
     background: #d0e8f5;
-}
+    }
 
 .botao {
     font-size: 1.2em;
@@ -83,11 +88,10 @@ fieldset.grupo .campo{
     padding: 0.2em 0.6em;
     box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
     text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
-    position: absolute;
-    top: 75%;
-    left: 47%;
-    margin-right: -50%;
-    transform: translate(-50%,-50%);
+    margin-left: 7em;
+    margin-top: 1%;
+    margin-bottom: 3%;
+    width: 10%;
 }
 
 .botao:hover {
@@ -100,4 +104,10 @@ fieldset.grupo .campo{
     cursor: pointer;
 }
 
-    
+#nascimento {
+    width: 196px;
+}
+
+#genero {
+    width: 202px;
+}
